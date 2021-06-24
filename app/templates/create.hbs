@@ -1,0 +1,12 @@
+<form {{action "add" on = "submit"}}>
+    <label for="personName">Enter name
+    <Input @type = "text" @value = {{this.model.name}} @id = "personName" /></label><br>
+    <label for="dob">Enter dob
+    <Input @type = "text" @value = {{this.model.dob}} @id = "dob" /></label><br>
+    <label for="address">Enter address
+    <Textarea @value = {{this.model.address}} @id = "address" /></label><br>
+    <label for="mno">Enter mobile number
+    <Input @type = "text" @value = {{this.model.mobNumber}} @id = "mno" /></label><br>
+    <button type="submit" class="button">Submit</button>
+</form>
+{{outlet}}

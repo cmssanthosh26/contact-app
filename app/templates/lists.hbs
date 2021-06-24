@@ -1,0 +1,13 @@
+<LinkTo @route = "create" class="button">Create your contact.</LinkTo>
+{{#if this.model}}
+<h3>Your Contact list :</h3>
+{{#each this.model as |person|}}
+    <div class="contactlist">
+      <LinkTo @route="list" @model={{person.id}} class="button">Contact Person name : {{person.name}}</LinkTo>
+      <p>Mobile number : {{person.mobNumber}}</p>
+    </div>
+{{/each}}
+{{else}}
+    <h3>No contact list. Please create and maintain your contact list.</h3>
+{{/if}}
+{{outlet}}
