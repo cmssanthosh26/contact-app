@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Government college of engineering.
+=======
+This is a text file.
+>>>>>>> e70a7321fef3cdf6f35fcdbba7ccdb6ab6fa0d1e
